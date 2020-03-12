@@ -10,6 +10,11 @@
         * {
             font-family: 'Poor Story', cursive;
             text-align: CENTER;
+            border-radius: 1px;
+
+        }
+
+    
            
         }
     </STYle>
@@ -17,27 +22,50 @@
 </head>
 
 <body>
-    </div>
-    <img src="https://view01.wemep.co.kr/wmp-product/3/966/521339663/pm_1xoubvbqv40q.jpg?1580287590" <DIV>
-    </DIV>
 
-
+    <img src="https://view01.wemep.co.kr/wmp-product/3/966/521339663/pm_1xoubvbqv40q.jpg?1580287590">
     <div style='line-height:150%'>
         <h1>황사마스크</h1>
-        <h2>가격 : 5000원</h2>
-        <div h4> 매일 신선한 공기 KF94 마스크!</div>
-        <div h4>이름: <input type="text"></div>
-        <div h4>수량: <select number="number">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
+        <h2>가격 : 5000원/1개</h2>
+        <div>
+            <h3> 매일 신선한 공기 KF94 마스크!
         </div>
-        <div h4>연락처: <input type="text"></div>
-        <div h4>주소: <input type="text"></div>
-    </div>
+
+        <div>
+
+            <div class="input-group-prepend">
+                <div>
+                    <span class="input-group-text" id="inputGroup-sizing-sm">성함:</span>
+                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                </div>
+
+                <div>
+                    <span label class="input-group-text" id="inputGroup-sizing-sm">수량:</span></label>
+
+
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>--수량을 선택하세요--</option>
+                        <option value="1">1개</option>
+                        <option value="2">2개</option>
+                        <option value="3">3개</option>
+                        <option value="4">4개</option>
+                        <option value="5">5개</option>
+                    </select>
+                </div>
+
+                <div>
+                    <span class="input-group-text" id="inputGroup-sizing-sm">연락처:</span>
+                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                </div>
+
+                <div>
+                    <span class="input-group-text" id="inputGroup-sizing-sm">주소:</span>
+                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                
+            </div>
+            <button class="btn btn-primary" type="submit">주문하기</button>
+        </div>
 
 </body>
 
