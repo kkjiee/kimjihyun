@@ -13,12 +13,11 @@
             border-radius: 1px;
 
         }
-
-    
-           
-        }
     </STYle>
-
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
 </head>
 
 <body>
@@ -32,17 +31,16 @@
         </div>
 
         <div>
-
-            <div class="input-group-prepend">
-                <div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-sm">성함:</span>
-                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                 </div>
-
-                <div>
-                    <span label class="input-group-text" id="inputGroup-sizing-sm">수량:</span></label>
-
-
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">수량:</span>
                     <select class="custom-select" id="inputGroupSelect01">
                         <option selected>--수량을 선택하세요--</option>
                         <option value="1">1개</option>
@@ -52,20 +50,31 @@
                         <option value="5">5개</option>
                     </select>
                 </div>
-
-                <div>
-                    <span class="input-group-text" id="inputGroup-sizing-sm">연락처:</span>
-                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                </div>
-
-                <div>
-                    <span class="input-group-text" id="inputGroup-sizing-sm">주소:</span>
-                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                </div>
-                
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm">
             </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">연락처:</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">주소:</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+
+
+
+
             <button class="btn btn-primary" type="submit">주문하기</button>
         </div>
+    </div>
 
 </body>
 
