@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코쿤 드 세레니떼 릴렉싱 캔들</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- 구글폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
+    <style type="text/css">
+        * {
+            font-family: 'Sunflower', sans-serif;
+        }
+
+
+        .wrap {
+            width: 500px;
+            margin: auto;
+        }
+
+
+        .img {
+            background-image: url('https://img.loccitane.com/P.aspx?l=ko-KR&s=500&e=png&name=%EC%BD%94%EC%BF%A4-%EB%93%9C-%EC%84%B8%EB%A0%88%EB%8B%88%EB%96%BC-%EB%A6%B4%EB%A0%89%EC%8B%B1-%EC%BA%94%EB%93%A4&id=11BG140CS19&v=2');
+            background-size: cover;
+            background-position: center;
+            width: 500px;
+            height: 300px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .info {
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .order {
+            text-align: center;
+        }
+        .orders {
+            margin-top: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="img"> </div>
+        <div class="info">
+            <h2><strong>코쿤 드 세레니떼 릴렉싱 캔들</strong></h2>
+            <h4>가격: 36,000원</h4>
+            <h5>#식물성 왁스 캔들
+                #편안한 분위기를 위한 향
+                #릴렉싱한 향
+            </h5>
+
+        </div>
+
+        <div class="info">
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">주문자 성함</span>
+                </div>
+                <input type="text" class="form-control" id="name" aria-describedby="basic-addon3">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">수량</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>--수량을선택하세요--</option>
+                    <option value="1">1개</option>
+                    <option value="2">2개</option>
+                    <option value="3">3개</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">주소</span>
+                </div>
+                <input type="text" class="form-control" id="adress" aria-describedby="basic-addon3">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">전화번호</span>
+                </div>
+                <input type="text" class="form-control" id="phone" aria-describedby="basic-addon3">
+            </div>
+
+            <div class="order">
+                <button class="btn btn-primary" type="submit">주문하기</button>
+
+            </div>
+        </div>
+    <div class="orders">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">이름</th>
+                    <th scope="col">수량</th>
+                    <th scope="col">주소</th>
+                    <th scope="col">전화번호</th>
+                </tr>
+            </thead>
+            <tbody id="orders-box">
+                <tr>
+                    <td>김모모</td>
+                    <td>3개</td>
+                    <td>oo시 oo구 oo동</td>
+                    <td>000-0000-0000</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
