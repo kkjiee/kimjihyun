@@ -62,32 +62,30 @@
     <script>
 
 
-        function alert()
+        function alert_message(){
 
+            let orderName = $('#name').val();
+            let orderCount = $('#count').val();
+            let orderAdress = $('#adress').val();
+            let orderPhone = $('#phone').val();
 
-        let orderName = $('#name').val();
-        let orderCount = $('#count').val();
-        let orderAdress = $('#adress').val();
-        let orderPhone = $('#phone').val();
-
-        if (orderName == '') {
-            alert('이름을 입력해주세요')
-            $('#name').focus()
-            return;
-        } else if (orderCount == '') {
-            alert('수량을 입력해주세요')
-            $('#count').focus()
-            return;
-        } else if (orderAdress == '') {
-            alert('주소를 입력해주세요')
-            $('#adress').focus()
-            return;
+            if (orderName == '') {
+                alert('이름을 입력해주세요')
+                $('#name').focus()
+            } else if (orderCount == '') {
+                alert('수량을 입력해주세요')
+                $('#count').focus()
+            } else if (orderAdress == '') {
+                alert('주소를 입력해주세요')
+                $('#adress').focus()
+            }
+            else if (orderPhone == '') {
+                alert('번호를 입력해주세요')
+                $('#phone').focus()
+            }
+            
         }
-        else if (orderPhone == '') {
-            alert('번호를 입력해주세요')
-            $('#phone').focus()
-            return;
-        }
+
 
 
 
@@ -141,7 +139,7 @@
             </div>
 
             <div class="order">
-                <button onclick="alert" class="btn btn-primary" type="submit">주문하기</button>
+                <button onclick="alert_message()" class="btn btn-primary" type="submit">주문하기</button>
 
             </div>
         </div>
